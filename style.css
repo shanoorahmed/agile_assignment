@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #EEEEEE;
+    box-shadow: 0 2px 3px 3px #DFDFDE;
+}
+
+.nav-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem 0 10rem;
+}
+
+.icons {
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidebar {
+    position: fixed;
+    background-color: white;
+    left: -220px; 
+    width: 260px;
+    height: fit-content;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px #DFDFDE;
+    transition: left 500ms linear;
+    z-index: 10;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+.sidebar-heading {
+    height: auto;
+    padding: .7rem;
+    border-radius: 0 10px 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar-toggle-btn {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 4%;
+    cursor: pointer;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+
+span:nth-child(1) {
+    top: 10%;
+}
+
+span:nth-child(3) {
+    top: 90%;
+}
+
+#sidebar-menu {
+    margin: 1rem;
+}
+
+li {
+    font-size: small;
+}
+
+hr {
+    width: 85%;
+}
+
+.main-content {
+    position: absolute;
+    left: 160px;
+    width: 77%;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #DFDFDE;
+}
+
+.main-content-heading {
+    background-color: blue;
+    padding: 0.7rem 2.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+#expandable-cards {
+    margin: 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asset {
+    flex: 0 0 45%;
+    margin: 1rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #DFDFDE;
+}
+
+.asset-heading {
+    background-color: black;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
